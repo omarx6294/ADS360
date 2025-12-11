@@ -45,24 +45,24 @@ const SapBrace = ({ width = CONTAINER_WIDTH * 0.6 }) => (
 const apps = [
   { name: "Accounting", icon: "/icons/icon1.svg", competitor: "Quickbooks", x: 80, y: 36, arrow: { tx: -56, ty: -56, rot: -20 }, labelOffset: { lx: -54, ly: -84 } },
   { name: "Knowledge", icon: "/icons/icon2.svg", competitor: "Notion", x: 235, y: 36, arrow: { tx: -52, ty: -62, rot: -15 }, labelOffset: { lx: -40, ly: -92 } },
-  { name: "Sign", icon: "/icons/icon3.svg", competitor: "DocuSign", x: 395, y: 36, arrow: { tx: 0, ty: -64, rot: 0 }, labelOffset: { lx: -12, ly: -98 } },
-  { name: "CRM", icon: "/icons/icon4.svg", competitor: "Salesforce", x: 555, y: 36, arrow: { tx: 36, ty: -54, rot: 18 }, labelOffset: { lx: 36, ly: -88 } },
-  { name: "Studio", icon: "/icons/icon5.svg", competitor: "Power Apps", x: 715, y: 36, arrow: { tx: 46, ty: -56, rot: 20 }, labelOffset: { lx: 68, ly: -88 } },
-  { name: "Subscriptions", icon: "/icons/icon6.svg", competitor: "Chargebee", x: 875, y: 36, arrow: { tx: 54, ty: -46, rot: 12 }, labelOffset: { lx: 86, ly: -82 } },
+  { name: "Sign", icon: "/icons/icon3.svg", competitor: "DocuSign", x: 395, y: 36, arrow: { tx: -42, ty: -64, rot: 0 }, labelOffset: { lx: -12, ly: -98 } },
+  { name: "CRM", icon: "/icons/icon4.svg", competitor: "Salesforce", x: 555, y: 36, arrow: { tx: -26, ty: -84, rot: 18 }, labelOffset: { lx: 36, ly: -88 } },
+  { name: "Studio", icon: "/icons/icon5.svg", competitor: "Power Apps", x: 715, y: 36, arrow: { tx: -46, ty: -78, rot: 20 }, labelOffset: { lx: 26, ly: -88 } },
+  { name: "Subscriptions", icon: "/icons/icon6.svg", competitor: "Chargebee", x: 875, y: 36, arrow: { tx: -44, ty: -66, rot: 12 }, labelOffset: { lx: 26, ly: -82 } },
 
-  { name: "Rental", icon: "/icons/icon7.svg", competitor: "", x: 80, y: 156, arrow: null, labelOffset: null },
-  { name: "Point of Sale", icon: "/icons/icon8.svg", competitor: "Lightspeed", x: 235, y: 156, arrow: { tx: -44, ty: -62, rot: -18 }, labelOffset: { lx: -40, ly: -92 } },
-  { name: "Discuss", icon: "/icons/icon9.svg", competitor: "Slack", x: 395, y: 156, arrow: { tx: 10, ty: -66, rot: -12 }, labelOffset: { lx: -2, ly: -92 } },
-  { name: "Documents", icon: "/icons/icon10.svg", competitor: "Box", x: 555, y: 156, arrow: { tx: 46, ty: -56, rot: 18 }, labelOffset: { lx: 52, ly: -88 } },
-  { name: "Project", icon: "/icons/icon11.svg", competitor: "Asana", x: 715, y: 156, arrow: { tx: 18, ty: -88, rot: 10 }, labelOffset: { lx: 22, ly: -116 } },
-  { name: "Timesheets", icon: "/icons/icon12.svg", competitor: "Harvest", x: 875, y: 156, arrow: { tx: 72, ty: -14, rot: 10 }, labelOffset: { lx: 86, ly: -34 } },
+  { name: "Rental", icon: "/icons/icon7.svg", competitor: "", x: 80, y: 146, arrow: null, labelOffset: null },
+  { name: "Point of Sale", icon: "/icons/icon8.svg", competitor: "Lightspeed", x: 240, y: 146, arrow: { tx: -44, ty: -62, rot: -18 }, labelOffset: { lx: 36, ly: -68 } },
+  { name: "Discuss", icon: "/icons/icon9.svg", competitor: "Slack", x: 400, y: 146, arrow: { tx: -34, ty: -62, rot: -12 }, labelOffset: { lx: 36, ly: -68 } },
+  { name: "Documents", icon: "/icons/icon10.svg", competitor: "Box", x: 556, y: 146, arrow: { tx: -36, ty: -66, rot: -18 }, labelOffset: { lx: 36, ly: -68 } },
+  { name: "Project", icon: "/icons/icon11.svg", competitor: "Asana", x: 710, y: 146, arrow: { tx: -33, ty: -66, rot: 10 }, labelOffset: { lx: 36, ly: -68 } },
+  { name: "Timesheets", icon: "/icons/icon12.svg", competitor: "Harvest", x: 870, y: 146, arrow: { tx: -36, ty: -70, rot: -10 }, labelOffset: { lx: 36, ly: -68 } },
 
-  { name: "Field Service", icon: "/icons/icon13.svg", competitor: "Service cloud", x: 80, y: 276, arrow: { tx: -86, ty: -14, rot: -8 }, labelOffset: { lx: -144, ly: -38 } },
-  { name: "Planning", icon: "/icons/icon14.svg", competitor: "Monday.com", x: 235, y: 276, arrow: { tx: -36, ty: -78, rot: -12 }, labelOffset: { lx: -40, ly: -100 } },
-  { name: "Helpdesk", icon: "/icons/icon15.svg", competitor: "Zendesk", x: 395, y: 276, arrow: { tx: -8, ty: -8, rot: 20 }, labelOffset: { lx: -6, ly: -8 } },
-  { name: "Website", icon: "/icons/icon16.svg", competitor: "shopify", x: 555, y: 276, arrow: { tx: 48, ty: -44, rot: 14 }, labelOffset: { lx: 48, ly: -74 } },
-  { name: "Social Marketing", icon: "/icons/icon17.svg", competitor: "Hootsuite", x: 715, y: 276, arrow: { tx: 30, ty: -88, rot: 6 }, labelOffset: { lx: 30, ly: -118 } },
-  { name: "Email Marketing", icon: "/icons/icon18.svg", competitor: "Hubspot", x: 875, y: 276, arrow: { tx: 72, ty: -18, rot: 8 }, labelOffset: { lx: 90, ly: -44 } },
+  { name: "Field Service", icon: "/icons/icon13.svg", competitor: "Service cloud", x: 80, y: 260, arrow: { tx: -86, ty: -28, rot: -8 }, labelOffset: { lx: -144, ly: -38 } },
+  { name: "Planning", icon: "/icons/icon14.svg", competitor: "Monday.com", x: 235, y: 260, arrow: { tx: -33, ty: -78, rot: -12 }, labelOffset: { lx: 36, ly: -90 } },
+  { name: "Helpdesk", icon: "/icons/icon15.svg", competitor: "Zendesk", x: 395, y: 260, arrow: { tx: -36, ty: -66, rot: 20 }, labelOffset: { lx: 36, ly: -70 } },
+  { name: "Website", icon: "/icons/icon16.svg", competitor: "shopify", x: 555, y: 260, arrow: { tx: -36, ty: -66, rot: 14 }, labelOffset: { lx: 36, ly: -74 } },
+  { name: "Social Marketing", icon: "/icons/icon17.svg", competitor: "Hootsuite", x: 715, y: 276, arrow: { tx: -36, ty: -66, rot: 6 }, labelOffset: { lx: 36, ly: -80 } },
+  { name: "Email Marketing", icon: "/icons/icon18.svg", competitor: "Hubspot", x: 875, y: 276, arrow: { tx: -36, ty: -66, rot: 8 }, labelOffset: { lx: 36, ly: -80 } },
 
   // fourth row: SAP group
   { name: "Purchase", icon: "/icons/icon19.svg", competitor: "", x: 80, y: 372, arrow: null, labelOffset: null },
@@ -71,8 +71,8 @@ const apps = [
   { name: "Sales", icon: "/icons/icon22.svg", competitor: "", x: 555, y: 372, arrow: null, labelOffset: null },
 
   // right two
-  { name: "HR", icon: "/icons/icon23.svg", competitor: "BambooHR", x: 715, y: 372, arrow: { tx: 46, ty: -44, rot: 12 }, labelOffset: { lx: 84, ly: -74 } },
-  { name: "Dashboard", icon: "/icons/icon24.svg", competitor: "Tableau", x: 875, y: 372, arrow: { tx: 54, ty: -48, rot: 6 }, labelOffset: { lx: 84, ly: -78 } },
+  { name: "HR", icon: "/icons/icon23.svg", competitor: "BambooHR", x: 715, y: 372, arrow: { tx: -36, ty: -66, rot: 12 }, labelOffset: { lx: 36, ly: -70 } },
+  { name: "Dashboard", icon: "/icons/icon24.svg", competitor: "Tableau", x: 875, y: 372, arrow: { tx: -36, ty: -66, rot: 6 }, labelOffset: { lx: 36, ly: -70 } },
 ];
 
 const ICON_SIZE = 84;
@@ -288,7 +288,7 @@ export default function OdooComparison() {
                 />
               </button>
 
-              <span style={{ fontSize: 15, color: "#6b3f36", fontWeight: 600 }}>Imagine without odoo</span>
+              <span style={{ fontSize: 15, color: "#6b3f36", fontWeight: 600 }}>Imagine without ads360</span>
             </div>
           </div>
 
